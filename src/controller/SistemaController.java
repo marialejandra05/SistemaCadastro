@@ -1,35 +1,35 @@
 package controller;
 
-import service.CadastrarUsuarioService;
-import service.ListarUsuarioService;
-import service.OpcaoInvalidaService;
-import service.SairSistemaService;
+import service.*;
 
 public class SistemaController {
 
-    private CadastrarUsuarioService cadastrarUsuarioService = new CadastrarUsuarioService();
-    private ListarUsuarioService listarUsuarioService = new ListarUsuarioService();
-    private SairSistemaService sairSistemaService = new SairSistemaService();
-    private OpcaoInvalidaService opcaoInvalidaService = new OpcaoInvalidaService();
+    private AcaoSistema cadastrar = new CadastrarUsuarioService();
+    private AcaoSistema listar = new ListarUsuarioService();
+    private AcaoSistema sair = new SairSistemaService();
+    private AcaoSistema invalida = new OpcaoInvalidaService();
 
     public boolean processarOpcao(int opcao){
 
-        switch (opcao){
-            case 1:
-                cadastrarUsuarioService.executar();
-                return true;
-            case 2:
-                listarUsuarioService.executar();
-                return true;
-            case 3:
-                sairSistemaService.executar();
-                return false;
+    switch (opcao){
+        case 1:
+            cadastrar.executar();
+            return true;
 
+        case 2:
+            listar.executar();
+            return true;
 
-            default:
-                opcaoInvalidaService.executar();
-                return true;
+        case 3:
+            sair.executar();
+            return false;
+
+        default:
+            invalida.executar();
+            return true;
+
 
         }
     }
+
 }

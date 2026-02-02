@@ -1,7 +1,11 @@
 package service;
 
-public class SairSistemaService {
-    public void executar(){
+public class SairSistemaService implements AcaoSistema{
+
+
+    @Override
+    public void executar()
+    {
         System.out.println("Encerrando sistema...");
     }
 }
