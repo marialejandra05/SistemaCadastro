@@ -1,8 +1,6 @@
 package service;
 import model.Usuario;
-import service.UsuarioRepository;
-
-import model.Usuario;
+import repository.UsuarioRepository;
 
 import java.util.List;
 
