@@ -1,4 +1,4 @@
-package ui;
+package interfaceadapter.ui;
 
 public class Menu {
     public void mostrar(){

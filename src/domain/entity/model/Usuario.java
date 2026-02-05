@@ -1,4 +1,4 @@
-package model;
+package domain.entity.model;
 
 public class Usuario {
     private String nome;

@@ -1,6 +1,6 @@
 package repository;
 
-import model.Usuario;
+import domain.entity.model.Usuario;
 import java.util.ArrayList;
 import java.util.List;
 

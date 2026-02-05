@@ -1,5 +1,4 @@
-package ui;
-import java.sql.SQLOutput;
+package interfaceadapter.ui;
 import java.util.Scanner;
 
 public class EntradaUsuario {

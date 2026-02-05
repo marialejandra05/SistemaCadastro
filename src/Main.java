@@ -1,6 +1,6 @@
-import ui.Menu;
-import ui.EntradaUsuario;
-import controller.SistemaController;
+import interfaceadapter.ui.Menu;
+import interfaceadapter.ui.EntradaUsuario;
+import interfaceadapter.controller.SistemaController;
 
 public class Main {
 
