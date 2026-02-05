@@ -20,5 +20,8 @@
        ----------------------------------------
                  Desenvolvido em Java
        ----------------------------------------
+Arquitetura do Sistema
 
-![Diagrama de Arquitetura](images/diagrama-camadas.png)
+<p align="center">
+  <img src="images/diagrama-camadas.png" width="600">
+</p>
