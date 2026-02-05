@@ -21,8 +21,4 @@
                  Desenvolvido em Java
        ----------------------------------------
 
-flowchart TD
-User --> UI
-UI --> Controller
-Controller --> Services
-Services --> Model
+![Diagrama de Arquitetura](images/diagrama-camadas.png)
