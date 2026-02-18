@@ -1,33 +1,15 @@
-package repository;
+package application.port;
 
 import domain.entity.model.Usuario;
-import java.util.ArrayList;
 import java.util.List;
 
+public interface UsuarioRepository {
 
-public class UsuarioRepository {
+    void salvar(Usuario usuario);
 
-    private static List<Usuario> usuarios = new ArrayList<>();
+    boolean existePorCpf(String cpf);
 
-    public static void salvar(Usuario usuario) {
-        usuarios.add(usuario);
+    boolean existePorEmail(String email);
 
-    }
-
-    public static List<Usuario> listar() {
-        return usuarios;
-
-    }
-
-    public static boolean existeEmail(String email) {
-        for (Usuario usuario : usuarios) {
-            if (usuario.getEmail().equalsIgnoreCase(email)) {
-                return true;
-
-            }
-        }
-
-        return false;
-    }
-
+    List<Usuario> listar();
 }

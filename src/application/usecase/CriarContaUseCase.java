@@ -1,4 +1,15 @@
-package application.usecase;
+package application.port;
 
-public class CriarContaUseCase {
+import domain.entity.model.Conta;
+import java.util.List;
+
+public interface ContaRepository {
+
+    void salvar(Conta conta);
+
+    boolean existePorNumero(String numero);
+
+    Conta buscarPorNumero(String numero);
+
+    List<Conta> listar();
 }
